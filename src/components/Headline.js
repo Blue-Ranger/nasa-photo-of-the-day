@@ -1,6 +1,6 @@
 import React from "react";
 
-const NewCard = () => {
+const Headline = () => {
   return (
     <div className="header">
       <h1>NASA Photos</h1>
@@ -8,4 +8,4 @@ const NewCard = () => {
   );
 };
 
-export default NewCard;
+export default Headline;
