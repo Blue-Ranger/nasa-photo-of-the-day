@@ -3,6 +3,16 @@ import "./App.css";
 import axios from "axios";
 import Headline from "./components/Headline";
 import Content from "./components/Content";
+import styled from "styled-components";
+
+const WrapperDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Abril Fatface", cursive;
+`;
 
 function App() {
   const [data, setData] = useState("");
@@ -18,11 +28,12 @@ function App() {
         console.log(error);
       });
   }, []);
+
   return (
-    <div className="App">
+    <WrapperDiv>
       <Headline />
       <Content someData={data} />
-    </div>
+    </WrapperDiv>
   );
 }
 
